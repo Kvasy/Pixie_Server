@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Restarts all PxE Related Services on the PxE Host machine
+sudo systemctl restart dnsmasq nfs-kernel-server apache2 ssh
+echo -e "\ueb37 PxE Services Reset! \ueb37"
