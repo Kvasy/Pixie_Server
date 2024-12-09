@@ -1,0 +1,11 @@
+[/]
+background-color='rgb(46,46,46)'
+bold-color-same-as-fg=false
+font='RobotoMono Nerd Font Mono 14'
+foreground-color='rgb(214,214,214)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(121,121,121)'
+palette=['rgb(46,46,46)', 'rgb(192,28,40)', 'rgb(180,210,115)', 'rgb(232,125,62)', 'rgb(18,72,139)', 'rgb(158,134,200)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(229,181,103)', 'rgb(108,153,187)', 'rgb(176,82,121)', 'rgb(51,199,222)', 'rgb(214,214,214)']
+use-system-font=false
+use-theme-colors=false
+visible-name='MonoKai (Attempt)'
