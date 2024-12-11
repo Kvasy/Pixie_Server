@@ -1,0 +1,25 @@
+DEFAULT menu.c32
+NU TITLE ULTIMATE PXE SERVER - By JVu & MKv
+PROMPT 0 
+TIMEOUT 0
+
+MENU COLOR TABMSG 37;40 #ffffffff #00000000
+MENU COLOR TITLE 37;40 #ffffffff #00000000 
+MENU COLOR SEL 7 #ffffffff #00000000
+MENU COLOR UNSEL 37;40 #ffffffff #00000000
+MENU COLOR BORDER 37;40 #ffffffff #00000000
+
+LABEL PXE 192.4.1 - Standard Burn (4 HOUR)
+kernel /boot/pxe_192.4.1/vmlinuz
+initrd /boot/pxe_192.4.1/initrd.gz
+append ip=dhcp boot=casper netboot=nfs nfsroot=192.168.210.1:/var/www/html/pxe_192.4.1 root=/dev/nfs toram
+
+LABEL PXE 192.4 - 3rd Party (2 HOUR)
+kernel /boot/pxe_192.4/vmlinuz
+initrd /boot/pxe_192.4/initrd.gz
+append ip=dhcp boot=casper netboot=nfs nfsroot=192.168.210.1:/var/www/html/pxe_192.4 root=/dev/nfs toram
+
+LABEL TBI
+kernel /boot/TBI/vmlinuz
+initrd /boot/TBI/initrmfs.gz
+append iflkmap=us ktl=qwerty iflbflag=2 ip=dhcp boot=casper netboot=nfs nfsroot=192.168.210.1:/var/www/html/TBI root=/dev/nfs toram
